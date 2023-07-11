@@ -1,0 +1,7 @@
+<div class="container">
+  <button class="btn btn-info" (click)="abreComponente('1')">Categorias</button>
+  <button class="btn btn-info" (click)="abreComponente('2')">Productos</button>
+
+  <app-categoria *ngIf="componente == '1'"></app-categoria>
+  <app-producto *ngIf="componente == '2'"></app-producto>
+</div>

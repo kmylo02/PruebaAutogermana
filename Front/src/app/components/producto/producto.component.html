@@ -1,0 +1,28 @@
+<div class="container-fluid height">
+  <h1>Productos</h1>
+  <button class="btn btn-success" (click)="openModalProducto()">
+    Crear Categoria
+  </button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Categoria</th>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+        <th>Stock Disponible</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let element of listProducto">
+        <td>{{ element.idproducto }}</td>
+        <td>{{ element.categoria }}</td>
+        <td>{{ element.nombre }}</td>
+        <td>{{ element.descripcion }}</td>
+        <td>{{ element.precioVenta }}</td>
+        <td>{{ element.stock }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <form [formGroup]="formdata">
+    <div class="row">
+      <div class="col">
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          name="nombre"
+          formControlName="nombre"
+        />
+      </div>
+      <div class="col">
+        <label for="descripcion">Descripcion</label>
+        <input
+          type="text"
+          class="form-control"
+          name="descripcion"
+          formControlName="descripcion"
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-success" (click)="guardar()">Guardar</button>
+      </div>
+    </div>
+  </form>
+</div>
